@@ -1,6 +1,8 @@
 
 class Tictactoe():   
-''' This is simple TicTacToe game'''
+    ''' 
+    This is simple TicTacToe game
+    '''
 
     def __init__(self):
         '''
