@@ -5,20 +5,31 @@ import pygame
 from pygame.locals import QUIT
 
 pygame.init()
-SURFACE = pygame.display.set_mode((400,300))
-pygame.display.set_caption("Music Player")
 
-def main():
-    """main routine"""
-    while True:
-        SURFACE.fill((255,255,255))
+# music player screen option set
+size = [500, 400]
+screen = pygame.display.set_mode(size)
 
-        for event in pygame.event.get():
-            if event.type == QUIT:
-                pygame.quit()
-                sys.exit()
-            pygame.display.update()
+title = "My Music Player"
+pygame.display.set_caption(title)
 
+# Setting for music player inside
+clock = pygame.time.Clock()
+color = (0,0,0)
 
-if __name__=="__main__":
-    main()
+# main event
+
+SB = 0
+while SB==0:
+    screen.fill((255,255,255))
+
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            SB = 1
+            
+        else:
+            screen.fill(color)
+        pygame.display.flip()
+pygame.quit()
+sys.exit()
+
