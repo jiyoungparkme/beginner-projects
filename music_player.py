@@ -32,7 +32,7 @@ songstatus=StringVar()
 songstatus.set("choosing")
 
 # playlist
-playlist = Listbox(root, selectmode=SINGLE, bg="DodgerBlue2", fg="white", font=("arial", 15), width=30)
+playlist = Listbox(root, selectmode=SINGLE, bg="DodgerBlue2", fg="white", font=("arial", 15), width=30 )
 playlist.grid(columnspan=5)
 os.chdir(r"C:\Users\zeear\Desktop\지영\여행\영상\노래")
 songs=os.listdir()
