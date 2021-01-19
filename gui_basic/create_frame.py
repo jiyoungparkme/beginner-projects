@@ -7,4 +7,5 @@ root.geometry("640x480") # width * height
 
 root.resizable(False, False) # width, height fixed
 
+
 root.mainloop()
