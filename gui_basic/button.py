@@ -19,9 +19,14 @@ btn4.pack()
 btn5 = Button(root, fg='red', bg='yellow', text='button5')
 btn5.pack()
 
-photo = PhotoImage(file='img.png')
-btn6 = Button(root, image=photo)
-btn6.pack()
+# photo = PhotoImage(file=r'gui_basic/img.png')
+# btn6 = Button(root, image=photo)
+# btn6.pack()
 
+def btncmd():
+    print("button was clicked")
+
+btn7 = Button(root, text='Active', command=btncmd)
+btn7.pack()
 
 root.mainloop()
